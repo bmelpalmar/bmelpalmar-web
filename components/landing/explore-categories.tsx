@@ -97,7 +97,7 @@ export function ExploreCategories() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-primary font-medium mb-4">
-            Todo en un solo lugar
+            Todo en un sólo lugar
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-6 text-balance">
             Explora <span className="font-semibold">El Palmar</span>
