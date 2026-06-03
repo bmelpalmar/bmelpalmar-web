@@ -153,7 +153,7 @@ export function PricingPlans() {
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <div className="bg-card p-8 rounded-xl border border-border shadow-sm">
             <p className="text-muted-foreground leading-relaxed">
-              BM El Palmar es la plataforma digital que reune todos los negocios, servicios y experiencias de El Palmar en un solo lugar. Ofrecemos visibilidad real a traves de nuestra app movil y web, conectando directamente con miles de visitantes y residentes.
+              BM El Palmar es la plataforma digital que reune todos los negocios, servicios y experiencias de El Palmar en un sólo lugar. Ofrecemos visibilidad real a traves de nuestra app movil y web, conectando directamente con miles de visitantes y residentes.
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@ export function PricingPlans() {
           <div className="bg-card p-8 rounded-xl border border-border shadow-sm">
             <h2 className="text-2xl font-bold text-foreground mb-6">Sabemos cómo es El Palmar</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Un chiringuito no es solo un restaurante. Un bar no es solo un bar. En El Palmar los negocios tienen múltiples facetas — dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez. Por eso en BM El Palmar hemos diseñado los planes para que, cuanto más crece tu visibilidad, más categorías puedes ocupar.
+              Un chiringuito no es sólo un restaurante. Un bar no es sólo un bar. En El Palmar los negocios tienen múltiples facetas — dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez. Por eso en BM El Palmar hemos diseñado los planes para que, cuanto más crece tu visibilidad, más categorías puedes ocupar.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Con el Plan Base estás donde más te importa. Con el Plus llegas a cinco frentes a la vez. Con el Premium tu negocio está en todas partes dentro de la app. Cada paso hacia arriba es más visibilidad, más categorías y más visitantes encontrándote.
@@ -439,7 +439,7 @@ export function PricingPlans() {
           <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-4">Crea momentos que se recuerdan</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Una experiencia en El Palmar no es solo hacer algo. Es vivir algo. Subirse a un caballo con el mar de fondo, sentir el viento en un parapente, la adrenalina de una carrera — esos son los momentos que la gente cuenta después.
+              Una experiencia en El Palmar no es sólo hacer algo. Es vivir algo. Subirse a un caballo con el mar de fondo, sentir el viento en un parapente, la adrenalina de una carrera — esos son los momentos que la gente cuenta después.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Por eso tus experiencias merecen ser encontradas fácilmente. Con nuestros planes, apareces en el momento exacto en que alguien decide dejar el móvil y vivir. Y cuando publicas una experiencia nueva, tus seguidores lo saben al instante. No es publicidad — es una invitación.
