@@ -11,9 +11,31 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setIsLoading(false)
-    setIsSubmitted(true)
+    
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      business: formData.get("business") || "",
+      message: formData.get("message"),
+      type: formType
+    }
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      })
+      
+      if (response.ok) {
+        setIsSubmitted(true)
+      }
+    } catch (error) {
+      console.error("Error sending message:", error)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -36,8 +58,8 @@ export function ContactForm() {
         <div className="flex flex-wrap justify-center gap-12 mb-16 text-center">
           <div>
             <p className="text-secondary/40 text-xs tracking-[0.2em] uppercase mb-2 font-light">Email</p>
-            <a href="mailto:bmelpalmar@gmail.com" className="text-secondary hover:text-primary transition-colors font-light">
-              bmelpalmar@gmail.com
+            <a href="mailto:info@bmelpalmar.es" className="text-secondary hover:text-primary transition-colors font-light">
+              info@bmelpalmar.es
             </a>
           </div>
           <div>
