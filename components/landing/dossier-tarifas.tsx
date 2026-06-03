@@ -17,7 +17,7 @@ export function DossierTarifas() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-Un chiringuito no es solo un restaurante. Un bar no es solo un bar. En El Palmar los negocios tienen 
+Un chiringuito no es sólo un restaurante. Un bar no es sólo un bar. En El Palmar los negocios tienen 
                 múltiples facetas - dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez.
               </p>
               <p>
