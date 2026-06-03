@@ -39,10 +39,10 @@ export function WhatIsBM() {
             Tu plataforma digital
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-6 text-balance">
-            Todo en un solo lugar <span className="font-semibold">BM El Palmar</span>
+            Todo en un sólo lugar <span className="font-semibold">BM El Palmar</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            BM El Palmar es la plataforma digital que reúne todos los negocios, servicios y experiencias de El Palmar en un solo lugar. Ofrecemos visibilidad real a través de nuestra app móvil y web, conectando directamente con miles de visitantes y residentes.
+            BM El Palmar es la plataforma digital que reúne todos los negocios, servicios y experiencias de El Palmar en un sólo lugar. Ofrecemos visibilidad real a través de nuestra app móvil y web, conectando directamente con miles de visitantes y residentes.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export function WhatIsBM() {
             Sabemos cómo es <span className="font-semibold">El Palmar</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-4">
-            Un chiringuito no es solo un restaurante. Un bar no es solo un bar. En El Palmar los negocios tienen múltiples facetas — dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez. Por eso en BM El Palmar hemos diseñado los planes para que, cuanto más crece tu visibilidad, más categorías puedes ocupar.
+            Un chiringuito no es sólo un restaurante. Un bar no es sólo un bar. En El Palmar los negocios tienen múltiples facetas — dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez. Por eso en BM El Palmar hemos diseñado los planes para que, cuanto más crece tu visibilidad, más categorías puedes ocupar.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Con el Plan Base estás donde más te importa. Con el Plus llegas a tres frentes a la vez. Con el Premium tu negocio está en todas partes dentro de la app. Cada paso hacia arriba es más visibilidad, más categorías y más visitantes encontrándote.
