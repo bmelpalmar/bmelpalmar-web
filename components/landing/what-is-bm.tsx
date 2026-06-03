@@ -58,7 +58,7 @@ export function WhatIsBM() {
             Un chiringuito no es solo un restaurante. Un bar no es solo un bar. En El Palmar los negocios tienen múltiples facetas — dan de comer, ponen música, organizan noches y reciben a surfistas y turistas a la vez. Por eso en BM El Palmar hemos diseñado los planes para que, cuanto más crece tu visibilidad, más categorías puedes ocupar.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Con el Plan Base estás donde más te importa. Con el Plus llegas a cinco frentes a la vez. Con el Premium tu negocio está en todas partes dentro de la app. Cada paso hacia arriba es más visibilidad, más categorías y más visitantes encontrándote.
+            Con el Plan Base estás donde más te importa. Con el Plus llegas a tres frentes a la vez. Con el Premium tu negocio está en todas partes dentro de la app. Cada paso hacia arriba es más visibilidad, más categorías y más visitantes encontrándote.
           </p>
         </div>
 
