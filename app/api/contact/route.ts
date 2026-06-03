@@ -2,61 +2,37 @@ import { NextResponse } from "next/server"
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json()
-    const { name, email, message, business, formType } = body
-
-    // Validar campos requeridos
-    if (!name || !email || !message) {
-      return NextResponse.json(
-        { error: "Faltan campos requeridos" },
-        { status: 400 }
-      )
-    }
-
-    // Enviar email usando Resend o similar
-    // Por ahora, guardamos los datos y los enviamos por email
-    const emailContent = `
-Nuevo mensaje de contacto desde BM El Palmar
-
-Tipo: ${formType === "negocio" ? "Negocio" : "Turista"}
-Nombre: ${name}
-Email: ${email}
-${business ? `Negocio: ${business}` : ""}
-
-Mensaje:
-${message}
-    `.trim()
-
-    // Enviar notificación por email a info@bmelpalmar.es
-    // Usando la API de email de Vercel o Resend
+    const data = await request.json()
+    
+    // Enviar email usando Resend (necesitas crear cuenta gratis en resend.com)
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: "BM El Palmar <noreply@bmelpalmar.es>",
-        to: ["info@bmelpalmar.es"],
-        reply_to: email,
-        subject: `Nuevo contacto de ${name} - ${formType === "negocio" ? "Negocio" : "Turista"}`,
-        text: emailContent,
-      }),
+        from: "BM El Palmar <onboarding@resend.dev>",
+        to: "info@bmelpalmar.es",
+        subject: `Nuevo mensaje de ${data.type === "negocio" ? "negocio" : "turista"}: ${data.name}`,
+        html: `
+          <h2>Nuevo mensaje desde la web</h2>
+          <p><strong>Tipo:</strong> ${data.type === "negocio" ? "Negocio" : "Turista"}</p>
+          <p><strong>Nombre:</strong> ${data.name}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          ${data.business ? `<p><strong>Negocio:</strong> ${data.business}</p>` : ""}
+          <p><strong>Mensaje:</strong></p>
+          <p>${data.message}</p>
+        `
+      })
     })
 
-    if (!response.ok) {
-      console.error("Error sending email:", await response.text())
-      // Aún así devolvemos éxito para no frustrar al usuario
-      // Los datos se pueden recuperar de los logs
-      console.log("[v0] Contact form submission:", { name, email, formType, message })
+    if (response.ok) {
+      return NextResponse.json({ success: true })
+    } else {
+      return NextResponse.json({ error: "Error sending email" }, { status: 500 })
     }
-
-    return NextResponse.json({ success: true })
   } catch (error) {
-    console.error("Error processing contact form:", error)
-    return NextResponse.json(
-      { error: "Error al procesar el formulario" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Error processing request" }, { status: 500 })
   }
 }
