@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "mailto:bmelpalmar@gmail.com",
+    href: "mailto:info@bmelpalmar.es",
     icon: Mail,
   },
 ]
@@ -22,7 +22,6 @@ const navLinks = [
   { name: "Inicio", href: "#inicio" },
   { name: "Planes", href: "#planes" },
   { name: "Temporada", href: "#temporada" },
-  { name: "Alojamientos", href: "#alojamientos" },
   { name: "Servicios", href: "#servicios" },
   { name: "Contacto", href: "#contacto" },
 ]
@@ -70,10 +69,10 @@ export function Footer() {
             </p>
             <div className="space-y-3 mb-8">
               <a 
-                href="mailto:bmelpalmar@gmail.com"
+                href="mailto:info@bmelpalmar.es"
                 className="block text-white/70 text-sm font-light hover:text-white transition-colors"
               >
-                bmelpalmar@gmail.com
+                info@bmelpalmar.es
               </a>
               <a 
                 href="tel:+34692974017"
