@@ -24,12 +24,12 @@ const plans = [
   },
   {
     name: "Plan Plus",
-    subtitle: "Llega a cinco frentes a la vez.",
+    subtitle: "Llega a tres frentes a la vez.",
     price: "59",
     priceAnnual: "499",
-    categories: "Hasta 5 categorías",
+    categories: "Hasta 3 categorías",
     features: [
-      "Aparición en hasta 5 categorías",
+      "Aparición en hasta 3 categorías",
       '"Recomendados por BM"',
       "Hasta 10 fotografías",
       "Ficha ampliada",
