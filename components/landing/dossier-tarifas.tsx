@@ -298,7 +298,7 @@ Un chiringuito no es sólo un restaurante. Un bar no es sólo un bar. En El Palm
               Pack <span className="italic text-primary">Temporada Alta</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Ideal para negocios de temporada. El precio equivale a 5 meses del plan correspondiente y con un 15% de descuento a aplicar en los precios como promocion de bienvenida.
+              Ideal para negocios de temporada. 
             </p>
           </div>
 
